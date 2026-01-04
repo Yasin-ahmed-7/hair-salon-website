@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 30px;
+}
+
+nav .logo {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: url("images/salon.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero button {
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #b30059;
+    margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+button {
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1da851;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        justify-content: center;
+    }
+}
